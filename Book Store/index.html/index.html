@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Bookstore</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="checkout.html" class="hover:text-gray-300">Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-96 text-white flex justify-center items-center"
+        style="background-image: url('https://via.placeholder.com/1500');">
+        <h2 class="text-4xl font-bold">Explore the World of Books</h2>
+    </section>
+
+    <!-- Book Categories Section -->
+    <section class="container mx-auto py-12">
+        <h3 class="text-3xl text-center font-semibold mb-8">Browse by Categories</h3>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="p-6 border rounded-lg text-center">
+                <h4 class="text-xl font-semibold mb-4">Fiction</h4>
+                <img src="https://via.placeholder.com/200" alt="Fiction" class="mb-4 mx-auto">
+                <a href="#" class="text-blue-600 hover:underline">Shop Now</a>
+            </div>
+            <div class="p-6 border rounded-lg text-center">
+                <h4 class="text-xl font-semibold mb-4">Non-Fiction</h4>
+                <img src="https://via.placeholder.com/200" alt="Non-Fiction" class="mb-4 mx-auto">
+                <a href="#" class="text-blue-600 hover:underline">Shop Now</a>
+            </div>
+            <div class="p-6 border rounded-lg text-center">
+                <h4 class="text-xl font-semibold mb-4">Children</h4>
+                <img src="https://via.placeholder.com/200" alt="Children" class="mb-4 mx-auto">
+                <a href="#" class="text-blue-600 hover:underline">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="container mx-auto py-12">
+        <h3 class="text-3xl text-center font-semibold mb-8">Featured Books</h3>
+        <div class="grid grid-cols-4 gap-6">
+            <div class="p-4 bg-white border rounded-lg">
+                <img src="https://via.placeholder.com/150" alt="Book 1" class="w-full h-48 object-cover mb-4">
+                <h4 class="text-lg font-semibold mb-2">Book Title 1</h4>
+                <p class="text-gray-600 mb-4">By Author 1</p>
+                <p class="text-xl font-semibold mb-4">$20.00</p>
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-full" onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="p-4 bg-white border rounded-lg">
+                <img src="https://via.placeholder.com/150" alt="Book 2" class="w-full h-48 object-cover mb-4">
+                <h4 class="text-lg font-semibold mb-2">Book Title 2</h4>
+                <p class="text-gray-600 mb-4">By Author 2</p>
+                <p class="text-xl font-semibold mb-4">$22.00</p>
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-full" onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="p-4 bg-white border rounded-lg">
+                <img src="https://via.placeholder.com/150" alt="Book 3" class="w-full h-48 object-cover mb-4">
+                <h4 class="text-lg font-semibold mb-2">Book Title 3</h4>
+                <p class="text-gray-600 mb-4">By Author 3</p>
+                <p class="text-xl font-semibold mb-4">$18.00</p>
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-full" onclick="addToCart(3)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Bookstore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

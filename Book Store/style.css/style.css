@@ -1,0 +1,13 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+section {
+    margin-top: 20px;
+}
+
+footer {
+    font-size: 0.875rem;
+    text-align: center;
+}
